@@ -5,7 +5,9 @@ set(CMAKE_CXX_STANDARD 23)
 
 add_executable(PhotoBatch "main.cpp"
         ArgumentParser.h
-        ArgumentParser.cpp)
+        ArgumentParser.cpp
+        Utils.cpp
+        Utils.h)
 
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY, "${build}/..")

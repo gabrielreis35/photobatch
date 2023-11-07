@@ -7,13 +7,13 @@
 #include <map>
 #include <algorithm>
 
-std::string ToLower(std::string str) {
-    std::transform(std::begin(str), std::end(str), std::begin(str),
-                   [](unsigned char c) {
-                       return std::tolower(c);
-                   });
-    return str;
-}
+/*
+ * Example:
+ *  ArgumentParser argParser; - call function
+ *  argParser.RegisterFlag("rename"); - register flag
+ *  argParser.Parse(argc, argv); - parse flag
+ *  std::cout << std::boolalpha << "Rename: " << argParser.GetFlag("rename") << std::endl; - call flag registered
+ */
 
 class ArgumentParser {
 public:
@@ -21,6 +21,10 @@ public:
     bool GetFlag(const std::string& flag) const;
     void Parse(int argc, char* argv[]);
 
+    void RegisterOption(const std::string& option);
+    const std::string& GetOption(const std::string& option) const;
+
 private:
     std::map<std::string, bool> map_Flags;
+    std::map<std::string, std::string> map_Options;
 };
