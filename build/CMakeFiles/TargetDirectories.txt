@@ -1,0 +1,3 @@
+/home/gabrielreis/Documents/Study/Cpp/build/CMakeFiles/PhotoBatch.dir
+/home/gabrielreis/Documents/Study/Cpp/build/CMakeFiles/edit_cache.dir
+/home/gabrielreis/Documents/Study/Cpp/build/CMakeFiles/rebuild_cache.dir
